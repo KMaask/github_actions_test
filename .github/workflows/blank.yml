@@ -10,7 +10,7 @@ jobs:
           file-path: './README.md'
       - name: Send mail
           if: always()
-          uses: dawidd6/action-send-mail@v3
+          uses: dawidd6/action-send-mail@v2
            with:
                server_address: smtp.gmail.com
                 server_port: 465
