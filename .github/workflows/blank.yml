@@ -8,10 +8,8 @@ jobs:
       - uses: gaurav-nelson/github-action-markdown-link-check@v1
         with:
           file-path: './README.md'
-  run-if-failed:
-        runs-on: ubuntu-latest
-        steps:
-        - name: Send mail
+      - name: Send mail
+        steps:        
          - uses: dawidd6/action-send-mail@v2
             with:
              server_address: smtp.gmail.com
