@@ -9,8 +9,8 @@ jobs:
         with:
           file-path: './README.md'
       - name: Send mail
-          if: ${{ failure() }}
-          uses: dawidd6/action-send-mail@v2
+        if: ${{ failure() }}
+        - uses: dawidd6/action-send-mail@v2
            with:
                server_address: smtp.gmail.com
                 server_port: 465
