@@ -1,7 +1,4 @@
-on:
-  push:
-    paths:
-      - '*.md'
+on: push
 name: Testing linkcheck
 jobs:
   markdown-link-check:
